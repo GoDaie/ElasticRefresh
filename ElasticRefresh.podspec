@@ -25,7 +25,14 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                   DESC
+  - 🌊 **Elastic Wave Animation** - Unique elastic wave effect during pull-to-refresh
+  - 🎨 **Highly Customizable** - Customize colors, animation timing, and loading views
+  - 🚀 **Pure Swift** - Written in modern Swift 5.0+ with type safety
+  - 📱 **Universal** - Works with UITableView, UICollectionView, and UIScrollView
+  - ⚡ **High Performance** - Optimized animations with smooth 60fps performance
+  - 🛡️ **Memory Safe** - Proper memory management with weak references
+  - 🎯 **Easy Integration** - Simple one-line setup with powerful customization options
+  DESC
 
   spec.homepage     = "https://github.com/GoDaie/ElasticRefresh"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -91,7 +98,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "ElasticRefresh-main", "ElasticRefresh-main/**/*.{h,m}"
+  spec.source_files  = "*.swift"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -129,7 +136,8 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
+  spec.swift_version = "5.0"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
